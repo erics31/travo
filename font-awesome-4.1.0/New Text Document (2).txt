@@ -1,0 +1,49 @@
+.sld-cont{
+	text-align:center;
+	position:absolute;
+	top:25%;
+	width:100%;
+	color:#fff;
+}
+.slide-txt{
+	font-family:OpenSans-Bold;
+	font-size:80px;
+	text-transform:uppercase;
+}
+.sub-had{
+	font-size:35px;
+}
+.readmore{
+	margin-top:25px;
+}
+.readmore a{
+	color:#fff;
+	font-size:25px;
+	display:inline-block;
+	background:#18bde7;
+	border:1px solid #fff;
+	padding:7px 25px;
+}
+/*.banner .owl-prev {
+    background: rgba(0, 0, 0, 0) url("../images/leftarrow.png") no-repeat scroll center center !important;
+    border-radius: 0 !important;
+    display: inline-block;
+    height: 46px;
+    text-indent: -5000px;
+    width: 46px;
+	float:left;
+}
+.banner .owl-next {
+    background: rgba(0, 0, 0, 0) url("../images/rightarrow.png") no-repeat scroll center center !important;
+    border-radius: 0 !important;
+    display: inline-block;
+    height: 46px;
+    text-indent: -5000px;
+    width: 46px;
+	float:right;
+}
+.banner .owl-buttons{
+	position:absolute;
+	width:100%;
+	top:50%;
+}*/
