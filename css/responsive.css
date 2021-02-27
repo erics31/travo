@@ -106,7 +106,7 @@
     font-size: 13px;
 }
 .searchbar {
-    margin-top: 0;
+    margin-top: 30px;
     padding: 25px;
 }
 .sr-head p:nth-child(1) {
@@ -122,28 +122,32 @@
     border: none;
     outline: none;
     height: 45px;
-    background: none;
+     background: #fff url(../images/sel-arrow.png) no-repeat right;
+     -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
 }
 select.s-name {
     border-left:none;
-    padding-left: 0;
+    padding-left: 10px;
     margin-left: 0;
     border-top: 1px solid #ccc;
+    margin-top: 10px;
 }
 .sr-inner {
     padding: 15px;
     margin: 0 auto;
     border-radius: 20px;
-    background: rgba(255,255,255,0.9);
-}
+    background:rgba(0,0,0,0.6);
+} 
 .sr-inner button {
     margin: 10px 0 0 0;
     padding: 0 0;
     width: 100%;
     height: 45px;
 }
-.copy-right {
-    width: 100%;
+.copy-right { 
+    width: 100%; 
 }
 .login-with ul li{
     width: 100%;
@@ -153,10 +157,13 @@ select.s-name {
     flex-direction: column;
 }
 .modal-body {
-    padding: 20px;
+    padding: 80px 20px 20px 20px;
 }
 .rem {
     font-size: 14px;
+}
+.modal-header{
+    padding: 25px 20px;
 }
 }
 @media only screen and (max-width:680px) {
@@ -164,10 +171,25 @@ select.s-name {
 @media only screen and (max-width:640px) {
 }
 @media only screen and (max-width:480px) {
+.logo {
+    width: 100px;
+}
+.header.header-fixed .header-inner {
+    padding: 15px 10px;
+}
+.rem, .rr{
+    flex-direction: column;
+}
+.rr .row1 {
+    max-width: 100%;
+    width: 100%;
+}
 }
 @media only screen and (max-width:360px) {
+
 }
 @media only screen and (max-width:320px) {
+
 }
 @media only screen and (max-width : 640px) and (orientation : landscape) {
 }
