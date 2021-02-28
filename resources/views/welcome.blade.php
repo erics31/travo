@@ -29,8 +29,8 @@
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> 
-    <![endif]-->	
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 	<!--Start Slider-->
 	<link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
@@ -50,7 +50,7 @@
             <ul>
               <li><a href="" data-toggle="modal" class="logbtn" data-target="#login">Login</a></li>
               <li><a href="" data-toggle="modal" class="signupbtn" data-target="#signup">Sign up</a></li>
-            </ul>  
+            </ul>
           </div><!--header-right-->
           </div><!--header-inner-->
         </div><!--main-container-->
@@ -65,13 +65,13 @@
         <p>15 City, 400 Places</p>
       </div>
 
-      <div class="sr-inner"> 
+      <div class="sr-inner">
         <form>
           <select>
-            <option>Location</option> 
-            <option>Location1</option> 
-          </select> 
- 
+            <option>Location</option>
+            <option>Location1</option>
+          </select>
+
           <select class="s-name">
             <option>Service Name</option>
             <option>Service Name1</option>
@@ -83,7 +83,7 @@
     </div><!--searchbar-->
   </div><!--banner-->
 
-  <div class="middle">   
+  <div class="middle">
       <div class="sec-1">
        <div class="main-container">
           <div class="sec-heading">
@@ -132,14 +132,14 @@
           </div><!--hero-grid-row-->
 
        </div><!--main-container-->
-      </div><!--sec-1-->   
+      </div><!--sec-1-->
 
         <div class="sec-2">
          <div class="main-container">
             <div class="sec-heading">
               <div class="head-text">Your heading here</div>
               <p class="sub-heading">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-            </div> 
+            </div>
 
             <div class="cat-slider">
               <div class="owl-carousel owl-theme">
@@ -197,7 +197,7 @@
               </div><!--item-->
             </div><!--owl-carousel-->
             </div><!--cat-slider-->
-          </div><!--main-container--> 
+          </div><!--main-container-->
         </div><!--sec-1-->
   </div><!--middle-->
 
@@ -260,7 +260,7 @@
           </div><!--row1-->
 
           <div class="rem">
-            <div class="passwrod-rem">             
+            <div class="passwrod-rem">
               <label class="container11">Remember password
                 <input type="checkbox">
                 <span class="checkmark"></span>
@@ -274,7 +274,7 @@
 
           <div class="row1 row12">
             <button class="button-log">login</button>
-          </div> 
+          </div>
 
           <div class="login-with">
             <div class="or"><span>or</span></div>
@@ -286,7 +286,7 @@
 
           <div class="no-ac">Don’t have an account? <a href="#" id="signupop">Sign up</a></div>
         </form>
-      </div><!--modal-body-->     
+      </div><!--modal-body-->
     </div>
   </div>
 </div>
@@ -313,7 +313,7 @@
           </div><!--row1-->
 
            <div class="row1">
-            <label>Last name</label> 
+            <label>Last name</label>
             <input type="text" class="in-fld" placeholder="Last name" name="">
           </div><!--row1-->
           </div>
@@ -325,12 +325,12 @@
 
           <div class="row1">
             <label>Passwrod</label>
-            <input type="text" class="in-fld" placeholder="Enter passwrod" name=""> 
+            <input type="text" class="in-fld" placeholder="Enter passwrod" name="">
           </div><!--row1-->
 
-          <div class="row1"> 
+          <div class="row1">
             <label>Confirm passwrod</label>
-            <input type="text" class="in-fld" placeholder="Enter passwrod" name=""> 
+            <input type="text" class="in-fld" placeholder="Enter passwrod" name="">
           </div><!--row1-->
 
           <div class="row1 row12">
@@ -338,16 +338,16 @@
           </div>
 
           <div class="login-with">
-            <div class="or"><span>or</span></div> 
+            <div class="or"><span>or</span></div>
             <ul>
-              <li><a href=""><i class="fa fa-facebook"></i> Login with facebook</a></li> 
+              <li><a href=""><i class="fa fa-facebook"></i> Login with facebook</a></li>
               <li><a href=""><i class="fa fa-google"></i> Login with google</a></li>
             </ul>
-          </div><!--login-with--> 
+          </div><!--login-with-->
 
-          <div class="no-ac">Already have an account? <a href="#" id="loginpop">Login</a></div> 
+          <div class="no-ac">Already have an account? <a href="#" id="loginpop">Login</a></div>
         </form>
-      </div><!--modal-body-->     
+      </div><!--modal-body-->
     </div>
   </div>
 </div>
@@ -368,7 +368,7 @@
 <!--end menu-->
 <script src="js/plugin.js"></script>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
  <script src="js/jquery.min.js"></script>
  <script src="js/owl.carousel.js"></script>
 <script src="js/menu.js" type="text/jscript"></script>
@@ -401,7 +401,7 @@ $(document).ready(function() {
 });
 </script>
 <script type="text/javascript">
-    $(window).scroll(function() {    
+    $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >=50) {
