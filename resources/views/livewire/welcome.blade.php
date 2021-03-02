@@ -257,7 +257,7 @@
 
         <!---login popup--->
         <div class="modal fade modal-center" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+            aria-hidden="true" wire:ignore>
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -266,7 +266,7 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" >
                         <div class="user-imgs"><i class="fa fa-user"></i></div>
                         <div>
                             <div class="row1">
