@@ -268,7 +268,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="user-imgs"><i class="fa fa-user"></i></div>
-                        <form>
+                        <div>
                             <div class="row1">
                                 <label>User name</label>
                                 <input type="text" class="in-fld" placeholder="User name" name="">
@@ -296,7 +296,7 @@
                             <!--rem-->
 
                             <div class="row1 row12">
-                                <button class="button-log">login</button>
+                                <button  wire:click="login" class="button-log">login</button>
                             </div>
 
                             <div class="login-with">
@@ -309,7 +309,7 @@
                             <!--login-with-->
 
                             <div class="no-ac">Don’t have an account? <a href="#" id="signupop">Sign up</a></div>
-                        </form>
+                        </div>
                     </div>
                     <!--modal-body-->
                 </div>
