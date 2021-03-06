@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use Auth;
 
 class LoginForm extends Component
 {
@@ -11,7 +12,7 @@ class LoginForm extends Component
     public $password;
     protected $rules = [
         'username' => 'required|min:6',
-        'password' => 'required|email',
+        'password' => 'required',
     ];
     public function render()
     {
@@ -19,6 +20,10 @@ class LoginForm extends Component
     }
     public function login(){
         $this->validate();
+        //now login
+        if (Auth::attempt(['email'=>$this->username,'password'=>$this->password])) {
+            return redirect('dashboard');
+        }
         $this->emit('refreshParent');
         $this->dispatchBrowserEvent('closeModal');
         $this->cleanVars();
