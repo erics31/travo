@@ -23,6 +23,8 @@ class CreateNewUser implements CreatesNewUsers
     {
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
+            'lastname' => ['required', 'string'],
+            'phone_number' => ['required', 'string'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             // 'password' => $this->passwordRules(),
         ])->validate();
@@ -30,6 +32,8 @@ class CreateNewUser implements CreatesNewUsers
         return DB::transaction(function () use ($input) {
             return tap(User::create([
                 'name' => $input['name'],
+                'lastname' => $input['lastname'],
+                'phone_number' => $input['phone_number'],
                 'email' => $input['email'],
                 'password' => Hash::make($input['password']),
             ]), function (User $user) {
