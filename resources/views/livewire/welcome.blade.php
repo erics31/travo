@@ -1,3 +1,4 @@
+
 <div>
     <!-- I begin to speak only when I am certain what I will say is not better left unsaid - Cato the Younger -->
     <div class="mainwrapper">
@@ -257,7 +258,7 @@
 
         <!---login popup--->
         <div class="modal fade modal-center" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true" wire:ignore>
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -266,50 +267,8 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body" >
-                        <div class="user-imgs"><i class="fa fa-user"></i></div>
-                        <div>
-                            <div class="row1">
-                                <label>User name</label>
-                                <input type="text" class="in-fld" placeholder="User name" name="">
-                            </div>
-                            <!--row1-->
-
-                            <div class="row1">
-                                <label>Passwrod</label>
-                                <input type="text" class="in-fld" placeholder="Enter passwrod" name="">
-                            </div>
-                            <!--row1-->
-
-                            <div class="rem">
-                                <div class="passwrod-rem">
-                                    <label class="container11">Remember password
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-
-                                <div class="forgot">
-                                    <a href="#">Forgot Password?</a>
-                                </div>
-                            </div>
-                            <!--rem-->
-
-                            <div class="row1 row12">
-                                <button  wire:click="login" class="button-log">login</button>
-                            </div>
-
-                            <div class="login-with">
-                                <div class="or"><span>or</span></div>
-                                <ul>
-                                    <li><a href=""><i class="fa fa-facebook"></i> Login with facebook</a></li>
-                                    <li><a href=""><i class="fa fa-google"></i> Login with google</a></li>
-                                </ul>
-                            </div>
-                            <!--login-with-->
-
-                            <div class="no-ac">Don’t have an account? <a href="#" id="signupop">Sign up</a></div>
-                        </div>
+                    <div class="modal-body">
+                        @livewire('login-form')
                     </div>
                     <!--modal-body-->
                 </div>

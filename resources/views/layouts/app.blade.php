@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Livo') }}</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -33,13 +33,17 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
     <!--Start Slider-->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
-    <!--end slider-->
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     @livewireStyles
 
@@ -48,7 +52,7 @@
 </head>
 
 <body class="font-sans antialiased">
-    <x-jet-banner />
+
 
     <div class="min-h-screen bg-gray-100">
 
@@ -60,7 +64,9 @@
             </div>
         </header>
         @endif
-
+        @if(Auth::check())
+            @livewire('navigation-dropdown')
+        @endif
         <!-- Page Content -->
         <main>
             {{ $slot }}
@@ -72,14 +78,14 @@
     @livewireScripts
 
     <script src="js/jquery.min.js"></script>
-    <!--Bootstrap Core JavaScript-->
+
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <!--Placeholder-->
+
     <script src="js/placeholders.min.js"></script>
-    <!--Menu-->
+
     <script type="text/javascript" src="js/script.js"></script>
-    <!--end menu-->
+
     <script src="js/plugin.js"></script>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -91,7 +97,7 @@
 
     <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
     <script src="js/animat.js"></script>
-    <!--end slider-->
+
     <script>
     $(document).ready(function() {
         $('.owl-carousel').owlCarousel({
