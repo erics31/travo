@@ -12,9 +12,8 @@ class Welcome extends Component
         return view('livewire.welcome');
     }
 
-    public function goToDetail()
+    public function goToDetail($key)
     {
-        Log::debug("detail");
-       return redirect()->to('detail');
+       return redirect()->to('detail?page='.$key);
     }
 }

@@ -62,8 +62,8 @@
                         <p class="sub-heading">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
                     </div>
 
-                    <div class="hero-grid-row" style="cursor:pointer;" wire:click="goToDetail">
-                        <div class="panel-hero">
+                    <div class="hero-grid-row" style="cursor:pointer;">
+                        <div class="panel-hero" wire:click="goToDetail('workspace')">
                             <div class="image-wrapper aspect--outer">
                                 <img src="images/img1.png" alt="">
                             </div>
@@ -73,8 +73,8 @@
                         </div>
                         <!--panel-hero-->
 
-                        <div class="panel-grid">
-                            <div class="hero-grid-panel">
+                        <div class="panel-grid" style="cursor:pointer;">
+                            <div class="hero-grid-panel" wire:click="goToDetail('learning')">
                                 <div class="image-wrapper aspect--outer">
                                     <img src="images/img2.png" alt="">
                                 </div>
@@ -84,7 +84,7 @@
                             </div>
                             <!--hero-grid-panel-->
 
-                            <div class="hero-grid-panel">
+                            <div class="hero-grid-panel" style="cursor:pointer;" wire:click="goToDetail('meeting')" >
                                 <div class="image-wrapper aspect--outer">
                                     <img src="images/img3.png" alt="">
                                 </div>
@@ -94,7 +94,7 @@
                             </div>
                             <!--hero-grid-panel-->
 
-                            <div class="hero-grid-panel">
+                            <div class="hero-grid-panel" style="cursor:pointer;" wire:click="goToDetail('renting')">
                                 <div class="image-wrapper aspect--outer">
                                     <img src="images/img4.png" alt="">
                                 </div>
@@ -104,7 +104,7 @@
                             </div>
                             <!--hero-grid-panel-->
 
-                            <div class="hero-grid-panel">
+                            <div class="hero-grid-panel" wire:click="goToDetail('printer')">
                                 <div class="image-wrapper aspect--outer">
                                     <img src="images/img5.png" alt="">
                                 </div>
