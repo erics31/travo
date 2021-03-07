@@ -62,7 +62,7 @@
                         <p class="sub-heading">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
                     </div>
 
-                    <div class="hero-grid-row">
+                    <div class="hero-grid-row" style="cursor:pointer;" wire:click="goToDetail">
                         <div class="panel-hero">
                             <div class="image-wrapper aspect--outer">
                                 <img src="images/img1.png" alt="">
