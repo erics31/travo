@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-
+    
     <!-- Styles -->
 
     @livewireStyles
@@ -93,6 +93,9 @@
     <script src="js/animat.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.js"></script>
+    <!--  -->
+    <!-- <script src="js/jquery-ui.min.js"></script> -->
+    <script src="js/main.js"></script>
     <!-- <script src="js/plugin.js"></script>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -129,6 +132,22 @@
 
     });
     </script>
+    <script>
+    $(".hero-items").owlCarousel({
+        loop: false,
+        margin: 0,
+        nav: true,
+        items: 1,
+        dots: false,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
+       
+        autoHeight: false,
+        autoplay: false,
+    });
+
+</script>
     <script type="text/javascript">
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
