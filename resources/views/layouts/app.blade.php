@@ -159,6 +159,10 @@
         }
     });
     </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvf9Yo3e56aJk0_a6hMXC1cGIiV-QHv2U&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
 </body>
 
 </html>
