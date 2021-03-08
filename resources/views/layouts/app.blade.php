@@ -43,7 +43,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     @livewireStyles
 
@@ -85,20 +84,30 @@
     <script src="js/placeholders.min.js"></script>
 
     <script type="text/javascript" src="js/script.js"></script>
-
+    
+    
+    <script src="js/menu.js" type="text/jscript"></script>
     <script src="js/plugin.js"></script>
+    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+    <script src="js/number-counter.js"></script>
+    <script src="js/animat.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- <script src="js/plugin.js"></script>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/menu.js" type="text/jscript"></script>
+   
+    
 
-    <script src="js/number-counter.js"></script>
+    
 
-    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
-    <script src="js/animat.js"></script>
+    
+    <script src="js/animat.js"></script> -->
+
 
     <script>
+     
     $(document).ready(function() {
         $('.owl-carousel').owlCarousel({
             loop: true,

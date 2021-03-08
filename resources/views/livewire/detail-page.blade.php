@@ -1,4 +1,8 @@
-
+<style>
+    .sec-2::after{
+        background:white !important;
+    }
+</style>
 <div>
     <!-- I begin to speak only when I am certain what I will say is not better left unsaid - Cato the Younger -->
     <div class="mainwrapper">
@@ -25,103 +29,13 @@
         <!--header-->
 
         <div class="banner">
-            <div class="banner-img"><img src="images/banner.png" alt=""> </div>
-
-            <div class="searchbar">
-                <div class="sr-head">
-                    <p>Find Your Perfect Space </p>
-                    <p>15 City, 400 Places</p>
-                </div>
-
-                <div class="sr-inner">
-                    <form>
-                        <select>
-                            <option>Location</option>
-                            <option>Location1</option>
-                        </select>
-
-                        <select class="s-name">
-                            <option>Service Name</option>
-                            <option>Service Name1</option>
-                        </select>
-
-                        <button><i class="fa fa-search"></i> Search</button>
-                    </form>
-                </div>
-                <!--sr-inner-->
-            </div>
+            <div class="banner-img"><img src="img/apartments.jpg" alt="" style="height:300px;object-fit: cover;"> </div>
             <!--searchbar-->
         </div>
         <!--banner-->
 
         <div class="middle">
-            <div class="sec-1">
-                <div class="main-container">
-                    <div class="sec-heading">
-                        <div class="head-text">Your heading here</div>
-                        <p class="sub-heading">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-                    </div>
-
-                    <div class="hero-grid-row" style="cursor:pointer;">
-                        <div class="panel-hero" wire:click="goToDetail('workspace')">
-                            <div class="image-wrapper aspect--outer">
-                                <img src="images/img1.png" alt="">
-                            </div>
-                            <!--image-wrapper aspect--outer-->
-                            <div class="img-name"><a href="">Working space</a></div>
-                            <!--img-name-->
-                        </div>
-                        <!--panel-hero-->
-
-                        <div class="panel-grid" style="cursor:pointer;">
-                            <div class="hero-grid-panel" wire:click="goToDetail('learning')">
-                                <div class="image-wrapper aspect--outer">
-                                    <img src="images/img2.png" alt="">
-                                </div>
-                                <!--image-wrapper aspect--outer-->
-                                <div class="img-name"><a href="">After school learning space</a></div>
-                                <!--img-name-->
-                            </div>
-                            <!--hero-grid-panel-->
-
-                            <div class="hero-grid-panel" style="cursor:pointer;" wire:click="goToDetail('meeting')" >
-                                <div class="image-wrapper aspect--outer">
-                                    <img src="images/img3.png" alt="">
-                                </div>
-                                <!--image-wrapper aspect--outer-->
-                                <div class="img-name"><a href="">Meeting space</a></div>
-                                <!--img-name-->
-                            </div>
-                            <!--hero-grid-panel-->
-
-                            <div class="hero-grid-panel" style="cursor:pointer;" wire:click="goToDetail('renting')">
-                                <div class="image-wrapper aspect--outer">
-                                    <img src="images/img4.png" alt="">
-                                </div>
-                                <!--image-wrapper aspect--outer-->
-                                <div class="img-name"><a href="">Renting of apartment</a></div>
-                                <!--img-name-->
-                            </div>
-                            <!--hero-grid-panel-->
-
-                            <div class="hero-grid-panel" wire:click="goToDetail('printer')">
-                                <div class="image-wrapper aspect--outer">
-                                    <img src="images/img5.png" alt="">
-                                </div>
-                                <!--image-wrapper aspect--outer-->
-                                <div class="img-name"><a href="">Where can I find printer internet</a></div>
-                                <!--img-name-->
-                            </div>
-                            <!--hero-grid-panel-->
-                        </div>
-                        <!--panel-grid-->
-
-                    </div>
-                    <!--hero-grid-row-->
-
-                </div>
-                <!--main-container-->
-            </div>
+            
             <!--sec-1-->
 
             <div class="sec-2">
@@ -204,10 +118,84 @@
                         </div>
                         <!--owl-carousel-->
                     </div>
+                    <div class="cat-slider">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="owl-inner">
+                                    <div class="cat-img">
+                                        <img src="images/m1.png" alt="">
+                                    </div>
+                                    <!--cat-img-->
+
+                                    <div class="cat-name">
+                                        <p>Houses</p>
+                                        <p>View 306,642 houses</p>
+                                    </div>
+                                    <!--cat-name-->
+                                </div>
+                                <!--owl-inner-->
+                            </div>
+                            <!--item-->
+
+                            <div class="item">
+                                <div class="owl-inner">
+                                    <div class="cat-img">
+                                        <img src="images/m2.png" alt="">
+                                    </div>
+                                    <!--cat-img-->
+
+                                    <div class="cat-name">
+                                        <p>Cottages</p>
+                                        <p>View 52,230 cottages</p>
+                                    </div>
+                                    <!--cat-name-->
+                                </div>
+                                <!--owl-inner-->
+                            </div>
+                            <!--item-->
+
+
+                            <div class="item">
+                                <div class="owl-inner">
+                                    <div class="cat-img">
+                                        <img src="images/m3.png" alt="">
+                                    </div>
+                                    <!--cat-img-->
+
+                                    <div class="cat-name">
+                                        <p>Condos/Apartments</p>
+                                        <p>View 182,639 condos/apartments</p>
+                                    </div>
+                                    <!--cat-name-->
+                                </div>
+                                <!--owl-inner-->
+                            </div>
+                            <!--item-->
+
+                            <div class="item">
+                                <div class="owl-inner">
+                                    <div class="cat-img">
+                                        <img src="images/m1.png" alt="">
+                                    </div>
+                                    <!--cat-img-->
+
+                                    <div class="cat-name">
+                                        <p>Houses</p>
+                                        <p>View 306,642 houses</p>
+                                    </div>
+                                    <!--cat-name-->
+                                </div>
+                                <!--owl-inner-->
+                            </div>
+                            <!--item-->
+                        </div>
+                        <!--owl-carousel-->
+                    </div>
                     <!--cat-slider-->
                 </div>
                 <!--main-container-->
             </div>
+            
             <!--sec-1-->
         </div>
         <!--middle-->
