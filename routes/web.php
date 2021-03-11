@@ -25,6 +25,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/posts', 'HomeController@index')->name('posts');
 Route::get('/profile', 'ShowProfile')->name('profile-settings');
 Route::get('/post-list', 'PostList')->name('post-list');
+Route::get('detail',function(){
+    return view('detail');
+});
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
